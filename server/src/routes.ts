@@ -3,7 +3,6 @@ import nodemailer from "nodemailer";
 import { submitFeedbackUseCase } from "./use-cases/submit-feedback-use-case";
 import { prismaFeedbacksRepository } from "./repositories/prisma/prisma-feedbacks-repository";
 import { NodemailerMailAdapter } from "./adapters/nodemailer/nodemailer-mail-adapter";
-
 export const router = express.Router();
 
 router.post("/feedback", async (req, res) => {
